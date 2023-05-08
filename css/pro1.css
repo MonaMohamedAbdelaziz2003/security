@@ -1,0 +1,1003 @@
+                                                                    * {
+                                                                        margin: 0px;
+                                                                        padding: 0px;
+                                                                        scroll-behavior: smooth;
+                                                                        text-transform: capitalize;
+                                                                        box-sizing: border-box;
+                                                                        box-sizing: content-box;
+                                                                        list-style: none;
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    
+                                                                    body,
+                                                                    html {
+                                                                        max-width: 100%;
+                                                                        overflow-x: hidden;
+                                                                    }
+                                                                    /* nav */
+                                                                    
+                                                                    .nav {
+                                                                        display: flex;
+                                                                        background-color: #161616;
+                                                                        justify-content: space-between;
+                                                                        padding: 10px;
+                                                                        color: #9c9797;
+                                                                    }
+                                                                    
+                                                                    .nav_div {
+                                                                        display: flex;
+                                                                        column-gap: 32px;
+                                                                    }
+                                                                    
+                                                                    .nav_div span {
+                                                                        color: white;
+                                                                        background-color: #65B530;
+                                                                        border-radius: 50%;
+                                                                        padding: 5px;
+                                                                        margin: 10px;
+                                                                    }
+                                                                    /* header */
+                                                                    
+                                                                    .header_home {
+                                                                        background: rgb(253, 253, 253);
+                                                                        display: flex;
+                                                                        justify-content: space-evenly;
+                                                                        height: 78px;
+                                                                        text-align: center;
+                                                                        align-items: center;
+                                                                        position: relative;
+                                                                        width: 100%;
+                                                                        z-index: 100;
+                                                                        overflow: hidden;
+                                                                    }
+                                                                    
+                                                                    .header_home:hover {
+                                                                        overflow: visible;
+                                                                    }
+                                                                    
+                                                                    .fixed {
+                                                                        position: fixed;
+                                                                        top: 0px;
+                                                                    }
+                                                                    
+                                                                    .header_home .lists .list ul li {
+                                                                        margin-right: 15px;
+                                                                        margin-top: 13px;
+                                                                    }
+                                                                    
+                                                                    .header_home .lists .list ul li a {
+                                                                        cursor: pointer;
+                                                                        color: black;
+                                                                        transition: 0.5s;
+                                                                    }
+                                                                    
+                                                                    .stt {
+                                                                        display: flex;
+                                                                    }
+                                                                    
+                                                                    .header_home .lists .list ul li a:hover {
+                                                                        color: #65B530;
+                                                                        text-decoration: none;
+                                                                        visibility: visible;
+                                                                    }
+                                                                    
+                                                                    .header_home div h1 {
+                                                                        color: #65B530;
+                                                                    }
+                                                                    
+                                                                    .lists {
+                                                                        display: flex;
+                                                                        justify-content: space-between;
+                                                                        font-size: 17px;
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    .list ul {
+                                                                        display: flex;
+                                                                        margin: 7px;
+                                                                        justify-content: space-evenly;
+                                                                    }
+                                                                    
+                                                                    .pages {
+                                                                        display: flex;
+                                                                        flex-direction: column;
+                                                                        position: absolute;
+                                                                        background-color: white;
+                                                                        width: 155px;
+                                                                        top: 96px;
+                                                                        /* right: 425px; */
+                                                                        border-radius: 9px;
+                                                                        transition: 0.5s;
+                                                                        visibility: hidden;
+                                                                        transition: 0.5s;
+                                                                    }
+                                                                    
+                                                                    .li_pages:hover li {
+                                                                        visibility: visible;
+                                                                    }
+                                                                    
+                                                                    .li_pages:hover .pages {
+                                                                        visibility: visible;
+                                                                        position: absolute;
+                                                                        top: 65px;
+                                                                    }
+                                                                    /* /////// */
+                                                                    
+                                                                    .list2 li {
+                                                                        background-color: #f5f5f5;
+                                                                        width: 40px;
+                                                                        height: 40px;
+                                                                        border-radius: 50%;
+                                                                    }
+                                                                    
+                                                                    .list2 li a {
+                                                                        color: #65B530;
+                                                                        font-size: 20px;
+                                                                        font-weight: bold;
+                                                                        margin-top: 10px;
+                                                                    }
+                                                                    
+                                                                    a :hover {
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    
+                                                                    .menu {
+                                                                        display: inline-block;
+                                                                        width: 33px;
+                                                                        height: 33px;
+                                                                        background-color: white;
+                                                                        border-radius: 5px;
+                                                                        border: 2px solid #12111169;
+                                                                        display: none;
+                                                                        font-size: 33px;
+                                                                    }
+                                                                    
+                                                                    @media (max-width:800px) {
+                                                                        .list2 {
+                                                                            display: none;
+                                                                            visibility: hidden;
+                                                                        }
+                                                                        .nav {
+                                                                            display: none;
+                                                                        }
+                                                                        .menu {
+                                                                            display: block;
+                                                                        }
+                                                                        .list_menu {
+                                                                            background-color: rgb(251, 250, 250);
+                                                                            position: absolute;
+                                                                            width: 100%;
+                                                                            right: 0px;
+                                                                            top: 70px;
+                                                                            height: 0px;
+                                                                            overflow: hidden;
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                            transition: 1s;
+                                                                            justify-content: space-evenly;
+                                                                        }
+                                                                        .stt {
+                                                                            margin-left: 46%;
+                                                                        }
+                                                                        .pages {
+                                                                            left: 240px;
+                                                                            top: 312px;
+                                                                            visibility: hidden;
+                                                                        }
+                                                                        .li_pages:hover .pages {
+                                                                            position: absolute;
+                                                                            top: 65px;
+                                                                        }
+                                                                        .list ul {
+                                                                            margin: 0px;
+                                                                        }
+                                                                        .header_home:hover {
+                                                                            overflow: visible;
+                                                                        }
+                                                                    }
+                                                                    /* home */
+                                                                    
+                                                                    .slids img {
+                                                                        width: 100%;
+                                                                        filter: brightness(0.5);
+                                                                        height: 800px;
+                                                                    }
+                                                                    
+                                                                    .but {
+                                                                        text-align: center;
+                                                                        position: relative;
+                                                                        z-index: 99;
+                                                                        top: -340px;
+                                                                        display: flex;
+                                                                        column-gap: 107px;
+                                                                        justify-content: center;
+                                                                    }
+                                                                    
+                                                                    .but button {
+                                                                        width: 50px;
+                                                                        height: 50px;
+                                                                        border-radius: 50%;
+                                                                        background-color: #ff000000;
+                                                                        font-size: 30px;
+                                                                        color: white;
+                                                                        box-shadow: 0.3px 0px 2px 2px;
+                                                                        transition: all 1s;
+                                                                    }
+                                                                    
+                                                                    .but1 button {
+                                                                        width: 144px;
+                                                                        height: 47px;
+                                                                        border-radius: 100px;
+                                                                        border: #ff000000;
+                                                                        background-color: #4d9c4d;
+                                                                    }
+                                                                    
+                                                                    .but button:hover {
+                                                                        background-color: #4caf50;
+                                                                    }
+                                                                    
+                                                                    .slids .cont {
+                                                                        position: relative;
+                                                                        top: -464px;
+                                                                        text-align: center;
+                                                                        color: white;
+                                                                        font-size: 20px;
+                                                                        font-weight: bolder;
+                                                                        display: flex;
+                                                                        flex-direction: column;
+                                                                        row-gap: 20px;
+                                                                    }
+                                                                    
+                                                                    .slids div h2 {
+                                                                        font-size: calc(1.525rem + 3.3vw);
+                                                                        font-weight: 900;
+                                                                    }
+                                                                    
+                                                                    .home {
+                                                                        height: 800px;
+                                                                        margin-bottom: 120px;
+                                                                    }
+                                                                    
+                                                                    @media (max-width:800px) {}
+                                                                    /* start page1 */
+                                                                    
+                                                                    .page1 {
+                                                                        display: flex;
+                                                                        margin: 0px 49px 130px;
+                                                                        column-gap: 20px;
+                                                                        /* padding-bottom: 278px; */
+                                                                    }
+                                                                    
+                                                                    .squ1 {
+                                                                        background-color: black;
+                                                                        padding: 51px;
+                                                                    }
+                                                                    
+                                                                    .squ1 h1 {
+                                                                        color: white;
+                                                                        border-bottom: 1px #ffffff61 solid;
+                                                                        padding-top: 25px;
+                                                                        font-size: 20px;
+                                                                        font-weight: bolder;
+                                                                        padding-bottom: 14px;
+                                                                    }
+                                                                    
+                                                                    .squ1 p {
+                                                                        color: rgb(96, 96, 96);
+                                                                    }
+                                                                    
+                                                                    .squ1 div {
+                                                                        display: flex;
+                                                                        color: rgb(96, 96, 96);
+                                                                        justify-content: space-between;
+                                                                    }
+                                                                    
+                                                                    .squ1 div p {
+                                                                        font-size: 50px;
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    @media (max-width:800px) {
+                                                                        .page1 {
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                            row-gap: 20px;
+                                                                        }
+                                                                        .but {
+                                                                            position: relative;
+                                                                            top: -420px;
+                                                                        }
+                                                                    }
+                                                                    /* start page2 */
+                                                                    
+                                                                    .page2 {
+                                                                        display: flex;
+                                                                        background-color: #b2b2b266;
+                                                                        margin-bottom: 73px;
+                                                                    }
+                                                                    
+                                                                    .page2_div2 {
+                                                                        display: grid;
+                                                                        flex-direction: column;
+                                                                        padding: 73px 89px;
+                                                                        grid-template-rows: repeat(3, 100px);
+                                                                        /* background-color: #b2b2b266; */
+                                                                        height: 532px;
+                                                                    }
+                                                                    
+                                                                    .page2_div2_div {
+                                                                        display: flex;
+                                                                        justify-content: space-between;
+                                                                    }
+                                                                    
+                                                                    .page2_div2 button {
+                                                                        width: 212px;
+                                                                        height: 53px;
+                                                                        margin-top: 19px;
+                                                                        border-radius: 35px;
+                                                                        border: navajowhite;
+                                                                        background-color: #00aa00ba;
+                                                                        color: white;
+                                                                        font-size: 15px;
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    .page2_div2 h1:first-child {
+                                                                        font-weight: bolder;
+                                                                    }
+                                                                    
+                                                                    .page2_div2_div_div1 {
+                                                                        display: flex;
+                                                                        justify-content: space-between;
+                                                                        column-gap: 28px;
+                                                                    }
+                                                                    
+                                                                    .page2_div2_div_div1 img {
+                                                                        width: 90px;
+                                                                        height: 90px;
+                                                                        background-color: white;
+                                                                        border-radius: 50%;
+                                                                    }
+                                                                    
+                                                                    .page2_div2_div_div1 p {
+                                                                        color: #65B530;
+                                                                    }
+                                                                    
+                                                                    .page2 .img_page2 img {
+                                                                        width: 100%;
+                                                                        height: 100%;
+                                                                    }
+                                                                    
+                                                                    @media (max-width:800px) {
+                                                                        .page2 {
+                                                                            display: flex;
+                                                                            padding: 10px 33px;
+                                                                            flex-direction: column;
+                                                                        }
+                                                                        .page2_div2_div_div1 {
+                                                                            display: flex;
+                                                                            justify-content: space-between;
+                                                                            column-gap: 28px;
+                                                                            flex-direction: column;
+                                                                        }
+                                                                        .page2_div2 {
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                            padding: 73px 30px;
+                                                                            height: 532px;
+                                                                        }
+                                                                    }
+                                                                    /* start page3 */
+                                                                    
+                                                                    .page3 {
+                                                                        margin: 0px 20px;
+                                                                        display: flex;
+                                                                    }
+                                                                    
+                                                                    .pag3 {
+                                                                        margin-bottom: 100px;
+                                                                    }
+                                                                    
+                                                                    .our {
+                                                                        text-align: center;
+                                                                        margin-bottom: 59px;
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    .page3 .page3_divs {
+                                                                        box-shadow: 0px 0px 1px 0px;
+                                                                        padding: 56px;
+                                                                    }
+                                                                    
+                                                                    .page3 .page3_divs h2 {
+                                                                        font-size: 20px;
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    .page3 .page3_divs a {
+                                                                        color: white;
+                                                                        font-weight: bolder;
+                                                                        font-size: 15px;
+                                                                        margin-left: 12px;
+                                                                        display: none;
+                                                                    }
+                                                                    
+                                                                    .s {
+                                                                        background-color: #65B530;
+                                                                        border-radius: 38px;
+                                                                        width: 38px;
+                                                                        height: 38px;
+                                                                        transition: 1s;
+                                                                        overflow: hidden;
+                                                                        display: flex;
+                                                                        color: white;
+                                                                        font-weight: bold;
+                                                                        align-items: center;
+                                                                        padding-left: 6px;
+                                                                    }
+                                                                    
+                                                                    .s:hover {
+                                                                        width: 150px;
+                                                                    }
+                                                                    
+                                                                    .s:hover a {
+                                                                        display: block;
+                                                                    }
+                                                                    
+                                                                    @media (max-width:1000px) {
+                                                                        .page3 {
+                                                                            display: grid;
+                                                                            grid-template-columns: repeat(2, 50%);
+                                                                        }
+                                                                    }
+                                                                    
+                                                                    @media (max-width:600px) {
+                                                                        .page3 {
+                                                                            display: grid;
+                                                                            grid-template-columns: repeat(1, 100%);
+                                                                        }
+                                                                    }
+                                                                    /* start page4 */
+                                                                    
+                                                                    .page4 {
+                                                                        display: flex;
+                                                                        margin-bottom: 40px;
+                                                                        background-color: #dbdcdc5c;
+                                                                        width: 100%;
+                                                                    }
+                                                                    
+                                                                    .page4_div1 {
+                                                                        padding: 53px 94px 40px;
+                                                                        display: grid;
+                                                                        row-gap: 45px;
+                                                                    }
+                                                                    
+                                                                    .page4_div2 img {
+                                                                        width: 100%;
+                                                                        height: 100%;
+                                                                    }
+                                                                    
+                                                                    .page4_div1_s {
+                                                                        display: grid;
+                                                                        grid-template-columns: repeat(2, 50%);
+                                                                        row-gap: 37px;
+                                                                        column-gap: 61px;
+                                                                    }
+                                                                    
+                                                                    .small {
+                                                                        column-gap: 24px;
+                                                                        font-size: 12px;
+                                                                        font-weight: bold;
+                                                                        display: flex;
+                                                                    }
+                                                                    
+                                                                    .small div p {
+                                                                        color: #65B530;
+                                                                    }
+                                                                    
+                                                                    .small div h3 {
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    .small img {
+                                                                        height: 71px;
+                                                                        background-color: #ffffff;
+                                                                        border-radius: 50%;
+                                                                    }
+                                                                    
+                                                                    @media (max-width:800px) {
+                                                                        .page4 {
+                                                                            display: inline-block;
+                                                                            margin-top: 40px;
+                                                                            padding: 10px;
+                                                                        }
+                                                                        .page4_div1 {
+                                                                            padding: 53px;
+                                                                            width: 100%;
+                                                                        }
+                                                                    }
+                                                                    
+                                                                    @media (max-width:550px) {
+                                                                        .page4_div1_s {
+                                                                            display: grid;
+                                                                            grid-template-columns: repeat(1, 100%);
+                                                                            row-gap: 8px;
+                                                                            text-align: center;
+                                                                            justify-content: center;
+                                                                            align-items: center;
+                                                                            padding-left: 20%;
+                                                                        }
+                                                                    }
+                                                                    /* page5 */
+                                                                    
+                                                                    .page5_div1 {
+                                                                        display: flex;
+                                                                        justify-content: space-evenly;
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    .page5_div1 button {
+                                                                        border: none;
+                                                                        background-color: white;
+                                                                    }
+                                                                    
+                                                                    .page5_div1 button:hover {
+                                                                        color: #65B530;
+                                                                        text-decoration: dashed;
+                                                                    }
+                                                                    
+                                                                    .our_pro {
+                                                                        text-align: center;
+                                                                        /* padding-top: 89px; */
+                                                                        padding-bottom: 20px;
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    .page5_div2 .pro img {
+                                                                        width: 100%;
+                                                                        position: relative;
+                                                                        transition: 1s;
+                                                                    }
+                                                                    
+                                                                    .page5_div2 {
+                                                                        display: grid;
+                                                                        grid-template-columns: repeat(3, 25%);
+                                                                        justify-content: center;
+                                                                        column-gap: 20px;
+                                                                        row-gap: 40px;
+                                                                        padding-top: 44px;
+                                                                    }
+                                                                    
+                                                                    .page5_div2 .pro {
+                                                                        box-shadow: 0 0 45px rgb(0 0 0 / 7%);
+                                                                        overflow: hidden;
+                                                                        height: 100%;
+                                                                        transition: 2s;
+                                                                    }
+                                                                    
+                                                                    .details {
+                                                                        text-align: center;
+                                                                        padding: 16px 0px;
+                                                                        transition: 2s;
+                                                                        height: 135px;
+                                                                    }
+                                                                    
+                                                                    .details h3 {
+                                                                        font-weight: bold;
+                                                                        font-size: 20px;
+                                                                        padding: 10px;
+                                                                    }
+                                                                    
+                                                                    .details p {
+                                                                        color: #65B530;
+                                                                        font-weight: bolder;
+                                                                    }
+                                                                    
+                                                                    .pro:hover .details {
+                                                                        position: relative;
+                                                                        bottom: 80px;
+                                                                        background-color: white;
+                                                                    }
+                                                                    
+                                                                    .pro:hover img {
+                                                                        transform: scale(1.2);
+                                                                    }
+                                                                    
+                                                                    .icon span {
+                                                                        background-color: #58ab21;
+                                                                        border-radius: 50%;
+                                                                        box-shadow: 0px 0px 5px 0px;
+                                                                        padding: 10px;
+                                                                        margin: 6px 10px;
+                                                                    }
+                                                                    
+                                                                    @media (max-width:1000px) {
+                                                                        .page5_div2 {
+                                                                            display: grid;
+                                                                            grid-template-columns: repeat(2, 40%);
+                                                                        }
+                                                                    }
+                                                                    
+                                                                    @media (max-width:600px) {
+                                                                        .page5_div2 {
+                                                                            display: grid;
+                                                                            grid-template-columns: repeat(1, 90%);
+                                                                        }
+                                                                    }
+                                                                    /* page6 */
+                                                                    
+                                                                    .page6 {
+                                                                        display: flex;
+                                                                        margin-top: 50px;
+                                                                        background-color: #f3f3f3;
+                                                                    }
+                                                                    
+                                                                    .page6 img {
+                                                                        height: 558px;
+                                                                        width: 100%;
+                                                                    }
+                                                                    
+                                                                    .page6_div1 {
+                                                                        padding: 70px;
+                                                                    }
+                                                                    
+                                                                    .form1 {
+                                                                        display: grid;
+                                                                        padding-top: 30px;
+                                                                        grid-template-columns: repeat(2, 49.5%);
+                                                                        column-gap: 10px;
+                                                                        row-gap: 12px;
+                                                                        /* grid-template-rows: repeat(2, 66px); */
+                                                                    }
+                                                                    
+                                                                    .form1 input {
+                                                                        border-radius: 8px;
+                                                                        padding: 22px;
+                                                                        border: navajowhite;
+                                                                    }
+                                                                    
+                                                                    .form1_div {
+                                                                        display: grid;
+                                                                        padding-top: 30px;
+                                                                        /* padding: 10px; */
+                                                                        grid-template-columns: repeat(1, 100%);
+                                                                        grid-template-rows: repeat(2, 66px);
+                                                                    }
+                                                                    
+                                                                    .form1_div textarea {
+                                                                        height: 59px;
+                                                                        border-radius: 7px;
+                                                                        border: none;
+                                                                        padding: 20px 0px 0px 26px;
+                                                                    }
+                                                                    
+                                                                    .form1_div button {
+                                                                        /* width: 628px; */
+                                                                        height: 60px;
+                                                                        background-color: #58ab21;
+                                                                        border: none;
+                                                                        margin: 10px 0px;
+                                                                        color: white;
+                                                                        font-weight: bold;
+                                                                        border-radius: 8px;
+                                                                        font-size: 20px;
+                                                                    }
+                                                                    
+                                                                    @media (max-width:1150px) {
+                                                                        .page6 {
+                                                                            display: inline-block;
+                                                                            padding: 10px;
+                                                                        }
+                                                                    }
+                                                                    
+                                                                    @media (max-width:800px) {
+                                                                        .form1 {
+                                                                            display: grid;
+                                                                            /* padding-top: 30px; */
+                                                                            grid-template-columns: repeat(1, 100%);
+                                                                            /* row-gap: 12px; */
+                                                                        }
+                                                                    }
+                                                                    /* page7 */
+                                                                    
+                                                                    .page7 {
+                                                                        display: grid;
+                                                                        grid-template-columns: repeat(4, 20%);
+                                                                        justify-content: center;
+                                                                        column-gap: 28px;
+                                                                    }
+                                                                    
+                                                                    .member img {
+                                                                        width: 100%;
+                                                                        transition: all 1s;
+                                                                    }
+                                                                    
+                                                                    .member {
+                                                                        box-shadow: rgb(0 0 0 / 8%) 0px 0px 45px;
+                                                                        text-align: center;
+                                                                        overflow: hidden;
+                                                                        transition: all 1s;
+                                                                    }
+                                                                    
+                                                                    .p_mem {
+                                                                        position: relative;
+                                                                        width: 100%;
+                                                                        height: 69%;
+                                                                        overflow: hidden;
+                                                                    }
+                                                                    
+                                                                    .on {
+                                                                        overflow: hidden;
+                                                                    }
+                                                                    
+                                                                    .p_mem .list2 {
+                                                                        text-align: center;
+                                                                        align-items: center;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        column-gap: 12px;
+                                                                        background-color: #000000a8;
+                                                                        height: 0px;
+                                                                        width: 0px;
+                                                                        position: absolute;
+                                                                        top: 50%;
+                                                                        left: 50%;
+                                                                        transition: all 1s;
+                                                                        opacity: 0;
+                                                                        visibility: hidden;
+                                                                    }
+                                                                    
+                                                                    .member:hover .p_mem .list2 {
+                                                                        opacity: 1;
+                                                                        height: 100%;
+                                                                        visibility: visible;
+                                                                        width: 100%;
+                                                                        top: 0px;
+                                                                        left: 0px;
+                                                                    }
+                                                                    
+                                                                    .member:hover img {
+                                                                        transform: scale(1.2);
+                                                                    }
+                                                                    
+                                                                    .member h3 {
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    .member p {
+                                                                        color: #58ab21;
+                                                                    }
+                                                                    
+                                                                    .mem {
+                                                                        text-align: center;
+                                                                        margin-top: 150px;
+                                                                        margin-bottom: 50px;
+                                                                        font-weight: bolder;
+                                                                    }
+                                                                    
+                                                                    @media (max-width:1000px) {
+                                                                        .page7 {
+                                                                            display: grid;
+                                                                            grid-template-columns: repeat(2, 40%);
+                                                                        }
+                                                                    }
+                                                                    
+                                                                    @media (max-width:600px) {
+                                                                        .page7 {
+                                                                            display: grid;
+                                                                            grid-template-columns: repeat(1, 80%);
+                                                                        }
+                                                                    }
+                                                                    /* page 8 */
+                                                                    
+                                                                    .page8 {
+                                                                        text-align: center;
+                                                                        margin-top: 80px;
+                                                                        width: 40%;
+                                                                        margin-left: 30%;
+                                                                    }
+                                                                    
+                                                                    .act {
+                                                                        width: 100px;
+                                                                        height: 100px;
+                                                                        opacity: 1;
+                                                                        margin: 7px;
+                                                                        border-radius: 50%;
+                                                                        transition: 1s;
+                                                                    }
+                                                                    
+                                                                    .img_Testimonial .img {
+                                                                        opacity: 0.5;
+                                                                        border-radius: 50%;
+                                                                        width: 65px;
+                                                                        height: 65px;
+                                                                        margin: 7px;
+                                                                        transition: 1s;
+                                                                    }
+                                                                    /* footer */
+                                                                    
+                                                                    .footer {
+                                                                        display: flex;
+                                                                        justify-content: space-around;
+                                                                        background-color: #161616 !important;
+                                                                        padding-top: 95px;
+                                                                        padding-bottom: 95px;
+                                                                        margin-top: 100px;
+                                                                    }
+                                                                    
+                                                                    .footer div h2 {
+                                                                        color: rgb(218, 216, 216);
+                                                                        /* margin-bottom: ; */
+                                                                    }
+                                                                    
+                                                                    .footer div p {
+                                                                        color: rgb(111 111 111);
+                                                                    }
+                                                                    
+                                                                    .footer div input {
+                                                                        padding: 10px;
+                                                                        border-radius: 7px;
+                                                                        background-color: #161616;
+                                                                        width: 300px;
+                                                                        margin-top: 10px;
+                                                                        box-shadow: 0px -1px 2px #f8f8f8;
+                                                                    }
+                                                                    
+                                                                    .li {
+                                                                        display: flex;
+                                                                        /* justify-content: space-around; */
+                                                                        margin-top: 10px;
+                                                                    }
+                                                                    
+                                                                    .li li {
+                                                                        border: 1px solid #cacaca;
+                                                                        border-radius: 50%;
+                                                                        width: 40px;
+                                                                        font-size: 30px;
+                                                                        height: 40px;
+                                                                        text-align: center;
+                                                                        transition: .3s;
+                                                                        margin-right: 6px;
+                                                                    }
+                                                                    
+                                                                    .li li:hover {
+                                                                        background-color: #cacaca;
+                                                                        width: 43px;
+                                                                        font-size: 30px;
+                                                                        height: 43px;
+                                                                    }
+                                                                    
+                                                                    .footer div ul a {
+                                                                        color: rgb(111 111 111);
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    
+                                                                    .ul2 li {
+                                                                        transition: .3s;
+                                                                        margin: 13px;
+                                                                        width: 100%;
+                                                                    }
+                                                                    
+                                                                    .ul2 li:hover {
+                                                                        /* font-size: 17px; */
+                                                                        width: 100%;
+                                                                        color: #58ab21;
+                                                                    }
+                                                                    
+                                                                    .ul2 span {
+                                                                        font-size: 17px;
+                                                                    }
+                                                                    
+                                                                    .end {
+                                                                        background-color: black;
+                                                                        display: flex;
+                                                                        justify-content: space-between;
+                                                                        padding: 0px 70px;
+                                                                        align-items: center;
+                                                                        height: 60px;
+                                                                        font-size: 15px;
+                                                                        font-weight: bold;
+                                                                        color: #aeaeae;
+                                                                    }
+                                                                    
+                                                                    .end span {
+                                                                        color: #58ab21;
+                                                                    }
+                                                                    
+                                                                    .arrow {
+                                                                        position: fixed;
+                                                                        opacity: 0;
+                                                                        right: 45px;
+                                                                        bottom: 45px;
+                                                                        z-index: 99;
+                                                                        background-color: #4caf50;
+                                                                        width: 40px;
+                                                                        border-radius: 50%;
+                                                                        height: 40px;
+                                                                        align-items: center;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        color: white;
+                                                                    }
+                                                                    
+                                                                    .arrow :hover {
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    
+                                                                    @media (max-width:1000px) {
+                                                                        .footer {
+                                                                            display: grid;
+                                                                            grid-template-columns: repeat(2, 40%);
+                                                                        }
+                                                                    }
+                                                                    
+                                                                    @media (max-width:500px) {
+                                                                        .footer {
+                                                                            display: grid;
+                                                                            justify-content: start;
+                                                                            padding-left: 31px;
+                                                                            grid-template-columns: repeat(1, 40%);
+                                                                        }
+                                                                    }
+                                                                    /* ///////////////   about ///////////// */
+                                                                    
+                                                                    .about_html {
+                                                                        background: linear-gradient(rgba(22, 22, 22, .7), rgba(22, 22, 22, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+                                                                        padding: 107px 72px;
+                                                                        margin-bottom: 100px;
+                                                                        background-size: cover;
+                                                                        color: white;
+                                                                    }
+                                                                    
+                                                                    .about_html div ul {
+                                                                        display: flex;
+                                                                        column-gap: 10px;
+                                                                    }
+                                                                    
+                                                                    .about_html div ul a {
+                                                                        color: white;
+                                                                    }
+                                                                    
+                                                                    .about_html h1 {
+                                                                        font-size: 64px;
+                                                                        font-weight: bolder;
+                                                                        margin-bottom: 10px;
+                                                                    }
+                                                                    
+                                                                    a:hover {
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    /* //////////////error */
+                                                                    
+                                                                    .error {
+                                                                        text-align: center;
+                                                                        width: 30%;
+                                                                        margin-left: 35%;
+                                                                    }
+                                                                    
+                                                                    .error span {
+                                                                        font-size: 90px;
+                                                                        color: green;
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    .error button {
+                                                                        padding: 16px 37px;
+                                                                        border-radius: 27px;
+                                                                        border: navajowhite;
+                                                                        margin-top: 33px;
+                                                                        color: white;
+                                                                        font-size: 15px;
+                                                                        background-color: #65B530;
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    .error p {
+                                                                        margin-top: 27px;
+                                                                        color: #c2c2c2;
+                                                                    }
+                                                                    
+                                                                    .error h1:first-child {
+                                                                        font-size: 100px;
+                                                                        font-weight: bold;
+                                                                    }
